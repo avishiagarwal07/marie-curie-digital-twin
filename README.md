@@ -90,7 +90,6 @@ streamlit run app.py
 * Hybrid search
 * Citation support
 * Enhanced memory visualization
-* Multi-person historical digital twins
 
 ## Author
 
