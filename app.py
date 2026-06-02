@@ -246,11 +246,19 @@ if prompt := st.chat_input("Ask Marie Curie anything..."):
 
     with st.chat_message("assistant"):
         with st.spinner(""):
-            response = get_response(
-                prompt,
-                st.session_state.chat_history[:-1],
-                st.session_state.retriever
-            )
+            try:
+                response = get_response(
+                    prompt,
+                    st.session_state.chat_history[:-1],
+                    st.session_state.retriever
+                )
+            except Exception as e:
+                print(f"App Error: {e}")
+
+                response = (
+                    "The AI service is temporarily unavailable. "
+                    "Please try again."
+                )
         st.write(response)
 
     st.session_state.chat_history.append({
