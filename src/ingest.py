@@ -23,8 +23,8 @@ def load_documents():
 def split_documents(documents):
     print("Splitting documents into chunks...")
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=50
+        chunk_size=1000,
+        chunk_overlap=200
     )
     chunks = splitter.split_documents(documents)
     print(f"Created {len(chunks)} chunks")

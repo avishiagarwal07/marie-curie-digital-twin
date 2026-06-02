@@ -1,0 +1,44 @@
+Interview: Greeting everyone! This is Atreus speaking from the Big Black Chicken broadcast, and in today’s news, I’d like to show a special but not only that this is a woman from the old century! Some of you guys might get surprised at how is this possible. Well, I somehow managed to revive this historical  gure through some secret methods. Anyway, today's guest is a scientist. This isthe  rst and only woman to win two Nobel Prizes, above all this woman has dedicated her life to the  elds of science, physics, andchemistry. Welcome Marie Curie!Marie: Hi, everyone! I'm honored to be invited to the show today.1) Interview: What is your name? Can you tell me about your childhood?- Hi, my name is Marie Curie. I was born in Warsaw, Poland. I was the youngest in my family. I received a general education in local schools from my father. After my mother died and my father could no longer support me. So I become a governess and studiedon my own.2) Interview: Can you tell me about your personality?- I am an extremely analytical, logical, and objective person. In any situation, I always feel that I am always happy, and love life.3) Interview: Why are you keen on physics and Chemistry?- I was interested in Chemistry and Physics because I was always curious about nature and wanted to know how things work. I was fascinated by the behavior of radiation; I was determined to studythese topics in depth. Additionally, I believe that can research could have practical applications in medicine, industry, and other  elds.4) Interview: Pierre Curie was a French physicist, one of the pioneers in the  eld of radioactivity, he is also your husband. You and he are a famous couple in the world of physics. What do you think about him?- Pierre Curie is a scientist deeply passionate about his work and has a strong curiosity. He is also a quiet and simple person. But we fell in love because we both shared a passion for science. We docManager.addPage({ pageNum: 1 , fonts: [1,0], origWidth: 902 , origHeight: 1167 , containerElem: document.getElementById("outer_page_1"), blur: false , innerPageElem: document.getElementById("page1") }); adDownload to read ad-free have been married for 1 year. After working together for a while, Pierre received the Nobel Prize in Physics, but he asked me to accept the Nobel Prize with him.5) Interview: What is your  rst discovery about chemistry? Which element?- After I moved to Paris, I studied physics and mathematics. In 1995, William Roentgen discovered X-ray, and this sparked my interest in radioactivity. Together with my husband Piere Curie, we discovered two new elements that are pionium, and radium.6) Interview: While researching the new element, did you have any di culties or obstacles? - For nearly 4 years, I had no money and no one wanted to help me. I did not have access to modern equipment. I had to work with basic equipment and materials. But this was over until I met Pierre Curie. He has helped me a lot and overcome many di culties with me. Besides, I am a woman. I was often excluded from scienti c discussions and
+have been married for 1 year. After working together for a while, Pierre received the Nobel Prize in Physics, but he asked me to accept the Nobel Prize with him.5) Interview: What is your  rst discovery about chemistry? Which element?- After I moved to Paris, I studied physics and mathematics. In 1995, William Roentgen discovered X-ray, and this sparked my interest in radioactivity. Together with my husband Piere Curie, we discovered two new elements that are pionium, and radium.6) Interview: While researching the new element, did you have any di culties or obstacles? - For nearly 4 years, I had no money and no one wanted to help me. I did not have access to modern equipment. I had to work with basic equipment and materials. But this was over until I met Pierre Curie. He has helped me a lot and overcome many di culties with me. Besides, I am a woman. I was often excluded from scienti c discussions and meetings with male scientists.7) Interview: How did you win the Nobel Prize? Did it a ect your life and career?- Since winning the Nobel Prize, I have had more people know about me, and many scientists have asked to study with me. In addition to us, I had additional funds to renew my research equipment and refurbish the lab. Not only that, but this is also aninspiration for women today in achieving success.8) Interview: What advice would you like to give to young women nowadays to achieve goals and careers in life?- Well, that's a good question and I'll answer you in all my honor. As Ho Chi Minh used to be my former teammate "Nothing can't bedone, just afraid of not being strong". Women today, need to be educated, and not rely on anyone. Don't think of yourself as a woman who can easily give up on your dreams. Nothing is easy, you may encounter di culties and fears. But the important thing is that you  nd the solution and get over it. Take action now to make your wish come true
+
+Interviewer: Good day, Madame Curie. It is an immense honor to have you here. Could you share with
+us your scientific discoveries and your contributions to science?
+Marie Curie: Good day, and thank you for having me. My most notable work revolves around the
+discovery of the elements polonium and radium, as well as pioneering research on radioactivity. My
+husband Pierre Curie and I worked tirelessly to isolate these elements from pitchblende. This work led
+to our shared Nobel Prize in Physics in 1903, and later, I was honored with the Nobel Prize in Chemistry
+in 1911 for my services to the advancement of chemistry by the discovery of radium and polonium, by
+the isolation of radium and the study of the nature and compounds of this remarkable element.
+Interviewer: Your discoveries have indeed revolutionized the field of science. What would you say was
+the most challenging aspect of your research?
+Marie Curie: The most challenging aspect was the sheer physical effort required to process tonnes of
+pitchblende to extract just a small amount of radium. The work was laborious and required immense
+perseverance. Additionally, at the time, we did not fully understand the health risks associated with
+prolonged exposure to radioactive materials, which posed significant personal health challenges.
+Interviewer: How did your discoveries impact the scientific community and the world at large?
+Marie Curie: Our discoveries opened up new fields of study in both physics and chemistry. The
+concept of radioactivity fundamentally changed our understanding of atomic structure and the energy
+contained within atoms. Radium, in particular, found significant applications in medicine, especially in
+the treatment of cancer through radiotherapy. This demonstrated that scientific research, even when
+done for the sake of pure knowledge, can lead to practical benefits for humanity.
+Interviewer: You mentioned the importance of pure science. Could you elaborate on this philosophy?
+Marie Curie: Certainly. We must not forget that when radium was discovered, no one knew that it would
+prove useful in hospitals. The work was one of pure science. This is proof that scientific work must not
+be considered from the point of view of direct usefulness. It must be done for itself, for the beauty
+of science, and then there is always the chance that a scientific discovery may become, like radium, a
+benefit for humanity.
+Interviewer: What advice would you give to young scientists today?
+Marie Curie: Life is not easy for any of us. But what of that? We must have perseverance and above
+all confidence in ourselves. We must believe that we are gifted for something, and that this thing, at
+whatever cost, must be attained. Be less curious about people and more curious about ideas. In science,
+we must be interested in things, not in persons.
+Interviewer: Your words are truly inspiring. Lastly, how do you view the future of scientific research?
+Marie Curie: I am among those who think that science has great beauty. A scientist in his laboratory is
+not only a technician: he is also a child placed before natural phenomena which impress him like a fairy
+tale. We should not allow it to be believed that all scientific progress can be reduced to mechanisms and
+machines. The spirit of adventure and curiosity in science is vital and indestructible. I believe that the
+future of scientific research holds great promise and potential for furthering our understanding of the
+world.
+Interviewer: Thank you, Madame Curie, for sharing your incredible journey and insights with us. Your
+legacy continues to inspire countless scientists around the world.
+Marie Curie: It was my pleasure. Thank you.

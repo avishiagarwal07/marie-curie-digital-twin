@@ -12,14 +12,22 @@ def load_retriever():
         embedding_function=embeddings
     )
     retriever = vector_store.as_retriever(
-        search_kwargs={"k": 4}
+        search_type="mmr",
+        search_kwargs={
+            "k": 6,
+            "fetch_k": 20
+        }
     )
     return retriever
 
 def retrieve_context(query, retriever):
     docs = retriever.invoke(query)
-    context = "\n\n".join([doc.page_content for doc in docs])
-    return context
+
+    context = "\n\n".join(
+        [doc.page_content for doc in docs]
+    )
+
+    return context, docs
 
 if __name__ == "__main__":
     print("Loading retriever...")

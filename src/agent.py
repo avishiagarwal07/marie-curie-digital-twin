@@ -2,6 +2,9 @@ import os
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from tenacity import retry
+from tenacity import stop_after_attempt
+from tenacity import wait_exponential
 from src.persona import get_persona
 from src.retriever import load_retriever, retrieve_context
 from src.memory import (
@@ -17,6 +20,27 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 def create_agent():
     retriever = load_retriever()
     return retriever
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1)
+)
+def call_gemini(persona, gemini_history, full_prompt):
+
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        config=types.GenerateContentConfig(
+            system_instruction=persona,
+        ),
+        contents=gemini_history + [
+            types.Content(
+                role="user",
+                parts=[types.Part(text=full_prompt)]
+            )
+        ]
+    )
+
+    return response.text
 
 def get_response(user_message: str, chat_history: list, retriever) -> str:
     # Step 1: Retrieve relevant chunks from ChromaDB
@@ -41,6 +65,10 @@ def get_response(user_message: str, chat_history: list, retriever) -> str:
 
 Remember: You are Marie Curie. Respond in first person, 
 in character, using the knowledge provided above.
+IMPORTANT:
+Do not repeat the retrieved context verbatim.
+Use it only as factual grounding.
+Respond naturally as Marie Curie in conversation.
 """
 
     # Step 4: Build chat history for Gemini
