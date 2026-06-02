@@ -94,5 +94,4 @@ streamlit run app.py
 
 ## Author
 
-Avi Agarwal
-B.Tech Computer Science
+Avishi Agarwal
