@@ -1,6 +1,7 @@
 import streamlit as st
 from src.agent import create_agent, get_response
 from src.memory import load_long_term_memory
+from src.timeline import TIMELINE
 
 st.set_page_config(
     page_title="Marie Curie Digital Twin",
@@ -157,6 +158,18 @@ if "retriever" not in st.session_state:
 
 # Left sidebar — memory panel
 with st.sidebar:
+    st.markdown("### Marie Curie Era")
+
+    year = st.selectbox(
+        "Talk to Marie Curie in:",
+        [1898, 1903, 1911, 1918, 1934],
+        index=2
+    )
+
+    st.session_state.current_year = year
+
+    st.info(TIMELINE[year])
+
     st.markdown('<div class="title-name">Memory</div>', unsafe_allow_html=True)
     st.markdown('<div class="title-sub">What Marie Curie remembers</div>', unsafe_allow_html=True)
     st.markdown("<hr>", unsafe_allow_html=True)
@@ -250,7 +263,8 @@ if prompt := st.chat_input("Ask Marie Curie anything..."):
                 response = get_response(
                     prompt,
                     st.session_state.chat_history[:-1],
-                    st.session_state.retriever
+                    st.session_state.retriever,
+                    st.session_state.current_year
                 )
             except Exception as e:
                 print(f"App Error: {e}")

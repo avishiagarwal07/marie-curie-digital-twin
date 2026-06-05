@@ -5,6 +5,7 @@ from google.genai import types
 from tenacity import retry
 from tenacity import stop_after_attempt
 from tenacity import wait_exponential
+from src.timeline import TIMELINE
 
 from src.persona import get_persona
 from src.retriever import load_retriever, retrieve_context
@@ -46,10 +47,22 @@ def call_gemini(persona, gemini_history, full_prompt):
     return response.text
 
 
-def get_response(user_message: str, chat_history: list, retriever) -> str:
+def get_response(
+    user_message: str,
+    chat_history: list,
+    retriever,
+    current_year: int = 1934
+) -> str:
 
     # Step 1: Retrieve relevant chunks from ChromaDB
-    context = retrieve_context(user_message, retriever)
+    context, docs = retrieve_context(user_message, retriever)
+    sources = []
+
+    for doc in docs:
+        source = doc.metadata.get("source", "Unknown Source")
+        sources.append(source)
+
+    sources_text = "\n".join(set(sources))
 
     # Step 2: Load long term memory
     long_term_memory = load_long_term_memory()
@@ -57,8 +70,24 @@ def get_response(user_message: str, chat_history: list, retriever) -> str:
 
     # Step 3: Build the full prompt
     persona = get_persona()
+    timeline_context = TIMELINE[current_year]
 
     full_prompt = f"""
+## CURRENT YEAR
+{current_year}
+
+## CURRENT LIFE CONTEXT
+{timeline_context}
+
+IMPORTANT:
+
+You are currently living in the year {current_year}.
+
+Anything that has not yet happened by {current_year}
+should be treated as part of the future.
+
+Your personal circumstances must match this year.
+
 ## Relevant Knowledge from Your Research and Work:
 {context}
 
@@ -68,13 +97,32 @@ def get_response(user_message: str, chat_history: list, retriever) -> str:
 ## Current Question:
 {user_message}
 
-Remember: You are Marie Curie. Respond in first person,
-in character, using the knowledge provided above.
+Remember:
 
+You are Marie Curie.
+
+Speak in first person.
+
+Your knowledge and personal experiences are limited
+to what would be true in the year {current_year}.
+
+Do not speak as though future events have already occurred.
 IMPORTANT:
-Do not repeat the retrieved context verbatim.
-Use it only as factual grounding.
-Respond naturally as Marie Curie in conversation.
+
+When the retrieved context contains information relevant
+to the question, prioritize it over your general knowledge.
+
+Base your answer primarily on the retrieved material.
+
+Do not invent scientific details that are not supported
+by the retrieved context.
+
+When discussing discoveries, experiments, radioactivity,
+chemistry, or physics, explicitly ground your answer in
+the provided material.
+
+If the retrieved context is insufficient,
+state that clearly rather than guessing.
 """
 
     # Step 4: Build chat history for Gemini
