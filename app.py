@@ -21,6 +21,18 @@ st.markdown("""
         background-color: #e8e6e3;
         border-right: 1px solid #d4d1cd;
     }
+            
+    /* Sidebar headings */
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        color: #2a2a2a !important;
+    }
+
+    /* Sidebar labels */
+    section[data-testid="stSidebar"] label {
+        color: #2a2a2a !important;
+    }
 
     /* Chat messages */
     .stChatMessage {
